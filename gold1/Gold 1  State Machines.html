@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head></head><body style="color: rgb(32, 33, 34); font-family: Verdana; font-size: 12pt;"><h2>Implementing a State Machine in Unity</h2>
+<p><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=30844&amp;type=dropbox&amp;rcode=064B912A-4640-45F0-8226-4D7DB7F43E52-107572" target="_self">Submission folder Gold 1 | Deadline: March 19, 23:59</a></p>
+<p><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=30844&amp;type=dropbox&amp;rcode=064B912A-4640-45F0-8226-4D7DB7F43E52-107573" target="_self">Submission folder Gold 1 retake | Deadline: April 16, 23:59</a></p>
+<hr>
+<p>Implement, using Unity, a State Machine <em>without</em>&nbsp;using existing solutions for State Machines (the animation state machine Unity provides, for example). In your Unity game, the goal is that the player should be able to control an object and change its state.&nbsp;</p>
+<p>Your game must contain a 3D environment/level containing several pieces of interesting geometry. Objects like ramps, arches, stairs, pillars are all valid. Using the ProBuilder package shown during the lectures is allowed and advised.</p>
+<p>The player can move around the player GameObject in this level by using WASD or the arrow-keys. This Gameobject can just be a default Capsule Unity provides, or something more custom for additional points. The movement is managed by a State Machine. The State Machine contains at least 4 different movement states, for example: idle, moving, running and jumping. It is required that at least one of these states relies on another state and can only be entered when that state is active. For example: you can only enter the jump-state while you’re in the running-state.&nbsp;</p>
+<p>Make sure that the movement of the player Gameobject is frame rate-independent. It is also required to keep the player Gameobject in-frame while it’s moving around by implementing a follow-camera. Using a package like CineMachine to achieve this is allowed.&nbsp;</p>
+<p>The current active state should always be obvious to the player. Either by displaying the state name as an UI-element, or changing/updating some other visual element (for example, the colour of the player object). The submission is not valid if the changes in state can not be detected in this way.</p>
+<p>Naive implementations (using a giant if-else statement, for example) of a State Machine are not sufficient for this assignment.</p>
+<h2><strong>To submit:</strong></h2>
+<ul>
+<li>The Unity project, including all code &amp; assets, excluding the library folder!</li>
+<li>A working build.</li>
+</ul>
+<p><span style="text-decoration: underline;">If you hand in a compressed file or files, the .zip extension is required. (.rar of anything else is not allowed)</span></p>
+<p><br><span style="text-decoration: underline;">Please put your name AND studentnumber in the file you submit.</span></p>
+<p>Good luck!</p></body></html>
